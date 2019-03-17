@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Clase05_Condicionales_2019</title>
+<title>Clase06_Ciclos_2019</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13121,7 +13121,7 @@ div#notebook {
 <p><br/></p>
 <div align="center">
 <h1>IWI131 Programación</h1><br/>
-<h2>Condiciones y Estructuras condicionales</h2>
+<h2>Estructuras Repetitivas y Ciclos</h2>
 <br/><br/>
 Departamento de Informática<br/>
 Universidad Técnica Federico Santa María
@@ -13132,228 +13132,12 @@ Universidad Técnica Federico Santa María
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Operadores-relacionales">Operadores relacionales<a class="anchor-link" href="#Operadores-relacionales">&#182;</a></h2><p>Comparan valores. Operandos pueden ser cualquier expresión que pueda ser comparado. Resultado siempre es un valor lógico.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Sentencias-C&#237;clicas">Sentencias C&#237;clicas<a class="anchor-link" href="#Sentencias-C&#237;clicas">&#182;</a></h2><p>Permiten realizar un conjunto instrucciones reiterativamente. Esta reiteración puede:</p>
 <ul>
-<li>igual a (<code>==</code>)</li>
-<li>distinto a (<code>!=</code>)</li>
-<li>mayor que (<code>&gt;</code>)</li>
-<li>menor que (<code>&lt;</code>)</li>
-<li>mayor o igual que (<code>&gt;=</code>)</li>
-<li>menor o igual que (<code>&lt;=</code>)</li>
+<li>Ser una cantidad de terminada de veces.</li>
+<li>Hasta que una condición se cumpla.</li>
 </ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">5</span> <span class="o">==</span> <span class="mi">3</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[1]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>False</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">7</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[2]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>False</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">4</span> <span class="o">!=</span> <span class="mi">3</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[3]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="s2">&quot;casa&quot;</span> <span class="o">==</span> <span class="s1">&#39;casa&#39;</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[4]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">3</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[5]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>False</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="s2">&quot;a&quot;</span> <span class="o">&lt;</span> <span class="s2">&quot;z&quot;</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[6]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Operadores-l&#243;gicos">Operadores l&#243;gicos<a class="anchor-link" href="#Operadores-l&#243;gicos">&#182;</a></h2><p>Tienen operandos y resultado de tipo lógico.</p>
+<p><strong>OJO</strong>: Notése que una cantidad finita de veces puede ser representada como condición.</p>
 
 </div>
 </div>
@@ -13361,224 +13145,7 @@ Universidad Técnica Federico Santa María
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>conjunción lógica <code>and</code></li>
-<li>disyunción lógica <code>or</code></li>
-<li>negación lógica <code>not</code></li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">3</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">and</span> <span class="kc">False</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[7]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>False</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">3</span><span class="o">!=</span><span class="mi">5</span> <span class="ow">or</span> <span class="kc">False</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[8]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="ow">not</span> <span class="kc">True</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[9]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>False</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="kc">False</span> <span class="ow">or</span> <span class="p">(</span><span class="ow">not</span> <span class="kc">False</span><span class="p">))</span> <span class="ow">and</span> <span class="p">(</span><span class="ow">not</span> <span class="kc">True</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[10]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>False</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">((</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="ow">or</span> <span class="p">((</span><span class="mi">2</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[11]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">((</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="ow">and</span> <span class="p">((</span><span class="mi">2</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[12]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>False</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Sentencias-Condicionales">Sentencias Condicionales<a class="anchor-link" href="#Sentencias-Condicionales">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Condicional-if">Condicional <code>if</code><a class="anchor-link" href="#Condicional-if">&#182;</a></h3><p>La sentencia <code>if</code> ejecuta las instrucciones solo si se cumple una condición. Si la condición es falsa no se hace nada</p>
+<h3 id="Ciclo-while">Ciclo while<a class="anchor-link" href="#Ciclo-while">&#182;</a></h3><p>El ciclo <code>while</code> ejecuta una secuencia de instrucciones mientras una condición sea verdadera.</p>
 
 </div>
 </div>
@@ -13587,8 +13154,8 @@ Universidad Técnica Federico Santa María
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Sintaxis:</strong></p>
-<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">condicion</span><span class="p">:</span>
-    <span class="n">sentencias</span>
+<div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">cond</span><span class="p">:</span>
+    <span class="n">sentencias</span> <span class="n">mientras</span> <span class="n">la</span> <span class="n">cond</span> <span class="n">sea</span> <span class="n">verdadera</span>
 </pre></div>
 
 </div>
@@ -13597,11 +13164,7 @@ Universidad Técnica Federico Santa María
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Sintaxis:</strong></p>
-<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">condicion</span><span class="p">:</span>
-    <span class="n">sentencias</span>
-</pre></div>
-<p>La <em>Tabulación/Sangría</em> después de la instrucción <code>if</code> indica que cosas se realizarán si se cumple la condición. Esto se llama <strong>Indentación</strong>.</p>
+<p>La <strong>Indentación</strong> después de la instrucción <code>while</code> indica que cosas se realizarán reiterativamente si se cumple la condición.</p>
 
 </div>
 </div>
@@ -13609,18 +13172,26 @@ Universidad Técnica Federico Santa María
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>La <strong>indentación</strong> es equivalente a utilizar el espacio de rompecabezas interno en bloque <code>if-else</code> de <em>Trinket</em> (después de <code>do</code> ó <code>else</code>).</p>
+<h3 id="Recordatorio/Reminder">Recordatorio/Reminder<a class="anchor-link" href="#Recordatorio/Reminder">&#182;</a></h3><p>La instrucción <code>while</code> equivalente al bloque <code>repeat-while</code> de trinket.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La <strong>indentación</strong> es equivalente a utilizar el espacio de rompecabezas interno en bloque <code>repeat-while</code> de <em>Trinket</em> (después de <code>do</code>).</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">IFrame</span>
-<span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;https://trinket.io/embed/blocks/b6016326cc?hideGeneratedCode=true&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;75%&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;https://trinket.io/embed/blocks/773558e03a?hideGeneratedCode=true&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;75%&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">250</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13633,7 +13204,7 @@ Universidad Técnica Federico Santa María
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -13641,8 +13212,8 @@ Universidad Técnica Federico Santa María
 
         <iframe
             width="75%"
-            height="300"
-            src="https://trinket.io/embed/blocks/b6016326cc?hideGeneratedCode=true"
+            height="250"
+            src="https://trinket.io/embed/blocks/773558e03a?hideGeneratedCode=true"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -13658,8 +13229,8 @@ Universidad Técnica Federico Santa María
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Condicional-if:-Diagrama-de-flujo-explicativo">Condicional if: Diagrama de flujo explicativo<a class="anchor-link" href="#Condicional-if:-Diagrama-de-flujo-explicativo">&#182;</a></h2><center>
-<img src="http://www.cristopherarenas.cl/progra-2019/images/if.png" width="40%">
+<h2 id="Ciclo-while:-Diagrama-de-flujo-explicativo">Ciclo while: Diagrama de flujo explicativo<a class="anchor-link" href="#Ciclo-while:-Diagrama-de-flujo-explicativo">&#182;</a></h2><center>
+<img src="http://www.cristopherarenas.cl/progra-2019/images/while.png" width="40%">
 </center>
 </div>
 </div>
@@ -13667,7 +13238,667 @@ Universidad Técnica Federico Santa María
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ejemplos">Ejemplos<a class="anchor-link" href="#Ejemplos">&#182;</a></h2>
+<h2 id="Conceptos-y-detalles-importantes">Conceptos y detalles importantes<a class="anchor-link" href="#Conceptos-y-detalles-importantes">&#182;</a></h2><p><strong>Sintaxis:</strong></p>
+<div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">cond</span><span class="p">:</span>
+    <span class="n">sentencias</span> <span class="n">mientras</span> <span class="n">la</span> <span class="n">cond</span> <span class="n">sea</span> <span class="n">verdadera</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><strong>Iteración:</strong> es una ejecución del cuerpo del ciclo. Cada vez que se ejecuten las sentencias del ciclo se habla de iteración.</li>
+<li>La condición es evaluada <strong>antes</strong> de cada iteración.</li>
+<li>Si la condición es <em>inicialmente falsa</em>, el ciclo <strong>no se ejecutará</strong>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#191;Entendemos-while?">&#191;Entendemos <code>while</code>?<a class="anchor-link" href="#&#191;Entendemos-while?">&#182;</a></h2><ul>
+<li>¿Qué realiza el siguiente ejemplo?</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;m: &quot;</span><span class="p">))</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;n: &quot;</span><span class="p">))</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">m</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">m</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">k</span> <span class="o">+</span> <span class="n">n</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El producto de m y n es:&quot;</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>m: 3
+n: 4
+El producto de m y n es: 12
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>¿Cómo realiza la operación?</li>
+<li>¿Cómo se asegura que en algún momento se termine el ciclo?</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Uso-de-Ciclos">Uso de Ciclos<a class="anchor-link" href="#Uso-de-Ciclos">&#182;</a></h2><p>¿Necesito usar un ciclo? <br/><br/></p>
+<p>Evaluar si en la siguiente situación deberíamos usar un ciclo.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>1.</strong> Escriba un programa que calcule el promedio de sus notas de certamenes de programación (IWI131).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ingrese nota C1: &#39;</span><span class="p">))</span>
+<span class="n">n2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ingrese nota C2: &#39;</span><span class="p">))</span>
+<span class="n">n3</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ingrese nota C3: &#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Su promedio es:&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">((</span><span class="n">n1</span><span class="o">+</span><span class="n">n2</span><span class="o">+</span><span class="n">n3</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Ingrese nota C1: 70
+Ingrese nota C2: 50
+Ingrese nota C3: 60
+Su promedio es: 60
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>1b.</strong> Escriba un programa que calcule el promedio las notas del certamen 1 de un paralelo de IWI131. (Nótese que generalmente los paralelos no tienen la misma cantidad de alumnos)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cant</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese la cantidad de alumnos: &quot;</span><span class="p">))</span>
+
+<span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">#contador de alumnos/notas ingresadas</span>
+<span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">#notas acumuladas</span>
+
+<span class="k">while</span> <span class="n">cont</span> <span class="o">&lt;</span> <span class="n">cant</span><span class="p">:</span>
+    <span class="n">nota</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese nota: &quot;</span><span class="p">))</span>
+    <span class="n">suma</span> <span class="o">=</span> <span class="n">suma</span> <span class="o">+</span> <span class="n">nota</span>
+    <span class="n">cont</span> <span class="o">=</span> <span class="n">cont</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El promedio del paralelo es:&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">suma</span><span class="o">/</span><span class="n">cont</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Ingrese la cantidad de alumnos: 4
+Ingrese nota: 70
+Ingrese nota: 50
+Ingrese nota: 60
+Ingrese nota: 60
+El promedio del paralelo es: 60
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>1c.</strong> Escriba un programa que calcule el promedio las notas de varios alumnos. Se ingresarán notas hasta que se ingrese el valor <strong>-1</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cont</span><span class="o">=</span><span class="mi">0</span> <span class="c1">#contador de cantidad notas ingresadas</span>
+<span class="n">suma</span><span class="o">=</span><span class="mi">0</span> <span class="c1">#notas acumuladas</span>
+
+<span class="n">nota</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese nota: &quot;</span><span class="p">))</span>
+
+<span class="k">while</span> <span class="n">nota</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+    <span class="n">suma</span> <span class="o">=</span> <span class="n">suma</span> <span class="o">+</span> <span class="n">nota</span>
+    <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1">#cont = cont + 1</span>
+    <span class="n">nota</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese nota: &quot;</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El promedio es:&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">suma</span><span class="o">/</span><span class="n">cont</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Ingrese nota: 40
+Ingrese nota: 50
+Ingrese nota: 60
+Ingrese nota: -1
+El promedio es: 50
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>1c.</strong> Escriba un programa que calcule el promedio las notas de varios alumnos. Se ingresarán notas hasta que se ingrese el valor <strong>-1</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">flag</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1"># bandera que indica si condicion se cumple</span>
+<span class="n">cont</span><span class="o">=</span><span class="mi">0</span> <span class="c1">#contador de cantidad notas ingresadas</span>
+<span class="n">suma</span><span class="o">=</span><span class="mi">0</span> <span class="c1">#notas acumuladas</span>
+
+<span class="k">while</span> <span class="n">flag</span><span class="p">:</span> <span class="c1">#flag==True</span>
+    <span class="n">nota</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese nota: &quot;</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">nota</span><span class="o">==-</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">flag</span><span class="o">=</span><span class="kc">False</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">suma</span> <span class="o">+=</span> <span class="n">nota</span> <span class="c1">#suma = suma + nota</span>
+        <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1">#cont = cont + 1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El promedio es:&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">suma</span><span class="o">/</span><span class="n">cont</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Ingrese nota: 40
+Ingrese nota: 50
+Ingrese nota: 60
+Ingrese nota: -1
+El promedio es: 50
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Patrones-Comunes">Patrones Comunes<a class="anchor-link" href="#Patrones-Comunes">&#182;</a></h2><p><strong>Patrón</strong>: Solución aplicable a un prolema que ocurre a menudo.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Sumar cosas</li>
+<li>Multiplicar cosas</li>
+<li>Contar cosas</li>
+<li>Encontrar el máximo</li>
+<li>Encontrar el mínimo</li>
+<li>Generar pares de cosas</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.-Sumar-cosas">1. Sumar cosas<a class="anchor-link" href="#1.-Sumar-cosas">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Escriba un programa que reciba como entrada un número entero. El programa debe mostrar el resultado de la suma de los números al cuadrado desde el 1 hasta el valor ingresado.
+$$
+1^2+2^2+\ldots+(n-1)^2+n^2
+$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese n: &quot;</span><span class="p">))</span>
+<span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">cont</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">while</span> <span class="n">cont</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">cont</span><span class="o">**</span><span class="mi">2</span>
+    <span class="c1">#print(&quot;d&quot;, d)</span>
+    <span class="n">suma</span> <span class="o">=</span> <span class="n">suma</span> <span class="o">+</span> <span class="n">d</span>
+    <span class="c1">#print(&quot;suma&quot;, suma)</span>
+    <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La suma de los numeros al cuadrado es:&quot;</span><span class="p">,</span> <span class="n">suma</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Ingrese n: 4
+La suma de los numeros al cuadrado es: 30
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Sintaxis sumar cosas:</strong></p>
+<div class="highlight"><pre><span></span><span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">ciclo</span><span class="p">:</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">calcular</span><span class="p">()</span>
+    <span class="n">suma</span> <span class="o">=</span> <span class="n">suma</span> <span class="o">+</span> <span class="n">n</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Cuáles son los elementos de este patrón?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.-Multiplicar-cosas">2. Multiplicar cosas<a class="anchor-link" href="#2.-Multiplicar-cosas">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Escriba una programa que calcule el factorial de un número $n$ ingresada como entrada:
+$3! = 1\cdot 2 \cdot 3$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese n: &quot;</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El factorial está definido sólo para números naturales mayores o igual que 0.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">prod</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">cont</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">while</span> <span class="n">cont</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+        <span class="n">prod</span>  <span class="o">=</span> <span class="n">prod</span> <span class="o">*</span> <span class="n">cont</span> <span class="c1">#prod *= cont</span>
+        <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1">#cont = cont + 1</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El factorial de&quot;</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="s2">&quot;es:&quot;</span><span class="p">,</span> <span class="n">prod</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Ingrese n: 4
+El factorial de 4 es: 24
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Sintaxis multiplicar cosas:</strong></p>
+<div class="highlight"><pre><span></span><span class="n">producto</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">ciclo</span><span class="p">:</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">calcular</span><span class="p">()</span>
+    <span class="n">producto</span> <span class="o">=</span> <span class="n">producto</span> <span class="o">*</span> <span class="n">n</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Cuáles son los elementos de este patrón?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.-Contar-cosas">3. Contar cosas<a class="anchor-link" href="#3.-Contar-cosas">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Escriba un programa que solicite el ingreso de $n$ números, luego entregue la cantidad de números pares ingresados.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese n: &quot;</span><span class="p">))</span>
+<span class="n">pares</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">#contador de pares</span>
+<span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">#contador de numeros</span>
+
+<span class="k">while</span> <span class="n">cont</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese numero: &quot;</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="c1">#si es divisible por 2</span>
+        <span class="n">pares</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1">#pares = pares + 1</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pares =&quot;</span><span class="p">,</span> <span class="n">pares</span><span class="p">)</span>
+    <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1">#cont = cont + 1 </span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La cantidad de pares ingresados es:&quot;</span><span class="p">,</span> <span class="n">pares</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Ingrese n: 5
+Ingrese numero: 1
+pares = 0
+Ingrese numero: 4
+pares = 1
+Ingrese numero: 2
+pares = 2
+Ingrese numero: 6
+pares = 3
+Ingrese numero: 3
+pares = 3
+La cantidad de pares ingresados es: 3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Sintaxis contar cosas:</strong></p>
+<div class="highlight"><pre><span></span><span class="n">cuenta</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">ciclo</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">condicion</span><span class="p">:</span>
+        <span class="n">cuenta</span> <span class="o">=</span> <span class="n">cuenta</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Cuáles son los elementos de este patrón?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.-Encontrar-el-m&#225;ximo">4. Encontrar el m&#225;ximo<a class="anchor-link" href="#4.-Encontrar-el-m&#225;ximo">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Escribir un programa que solicite n números y luego muestre el número mayor que haya sido ingresado.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Opción 1:</strong> usando un número muy pequeño para comparar.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese n: &quot;</span><span class="p">))</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">mayor</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;-inf&quot;</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+    <span class="n">mensaje</span> <span class="o">=</span> <span class="s2">&quot;Ingrese numero: &quot;</span>
+    <span class="n">numero</span> <span class="o">=</span>  <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="n">mensaje</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">mayor</span> <span class="o">&lt;</span> <span class="n">numero</span><span class="p">:</span>
+        <span class="n">mayor</span> <span class="o">=</span> <span class="n">numero</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;mayor temp =&quot;</span><span class="p">,</span> <span class="n">mayor</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El numero mayor es:&quot;</span><span class="p">,</span> <span class="n">mayor</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Ingrese n: 6
+Ingrese numero: 7.5
+mayor temp = 7.5
+Ingrese numero: 3.1
+mayor temp = 7.5
+Ingrese numero: 2
+mayor temp = 7.5
+Ingrese numero: 9.0
+mayor temp = 9.0
+Ingrese numero: 8.5
+mayor temp = 9.0
+Ingrese numero: 2.5
+mayor temp = 9.0
+El numero mayor es: 9.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Opción 2:</strong> sin usar número muy pequeño para comparar.</p>
+
 </div>
 </div>
 </div>
@@ -13676,9 +13907,20 @@ Universidad Técnica Federico Santa María
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nota</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese su nota: &quot;</span><span class="p">))</span>
-<span class="k">if</span> <span class="n">nota</span> <span class="o">&gt;=</span> <span class="mi">55</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Felicitaciones!!!&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese n: &quot;</span><span class="p">))</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+    <span class="n">mensaje</span> <span class="o">=</span> <span class="s2">&quot;Ingrese numero: &quot;</span>
+    <span class="n">numero</span> <span class="o">=</span>  <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="n">mensaje</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">mayor</span> <span class="o">=</span> <span class="n">numero</span>
+    <span class="k">elif</span> <span class="n">mayor</span> <span class="o">&lt;</span> <span class="n">numero</span><span class="p">:</span>
+        <span class="n">mayor</span> <span class="o">=</span> <span class="n">numero</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El numero mayor es&quot;</span><span class="p">,</span> <span class="n">mayor</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13695,8 +13937,13 @@ Universidad Técnica Federico Santa María
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese su nota: 55
-Felicitaciones!!!
+<pre>Ingrese n: 5
+Ingrese numero: 1.1
+Ingrese numero: 3.5
+Ingrese numero: 4.23
+Ingrese numero: 2.5
+Ingrese numero: 2.3
+El numero mayor es 4.23
 </pre>
 </div>
 </div>
@@ -13704,15 +13951,61 @@ Felicitaciones!!!
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Sintaxis-encontrar-el-m&#225;ximo:"><strong>Sintaxis encontrar el m&#225;ximo:</strong><a class="anchor-link" href="#Sintaxis-encontrar-el-m&#225;ximo:">&#182;</a></h3><div class="highlight"><pre><span></span><span class="n">mayor</span> <span class="o">=</span> <span class="n">numero_muy_chico</span>
+<span class="n">ciclo</span><span class="p">:</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">calcular</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="n">mayor</span><span class="p">:</span>
+        <span class="n">mayor</span> <span class="o">=</span> <span class="n">n</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Cuáles son los elementos de este patrón?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.-Encontrar-el-m&#237;nimo">5. Encontrar el m&#237;nimo<a class="anchor-link" href="#5.-Encontrar-el-m&#237;nimo">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Cómo cambia el patrón anterior si ahora se quiere encontrar el mínimo?</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nota</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese su nota: &quot;</span><span class="p">))</span>
-<span class="k">if</span> <span class="n">nota</span> <span class="o">&lt;</span> <span class="mi">55</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lamentablemente Ud. ha reprobado.&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese n: &quot;</span><span class="p">))</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">menor</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;inf&quot;</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+    <span class="n">mensaje</span> <span class="o">=</span> <span class="s2">&quot;Ingrese numero: &quot;</span>
+    <span class="n">numero</span> <span class="o">=</span>  <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="n">mensaje</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">menor</span> <span class="o">&gt;</span> <span class="n">numero</span><span class="p">:</span>
+        <span class="n">menor</span> <span class="o">=</span> <span class="n">numero</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El numero menor es:&quot;</span><span class="p">,</span> <span class="n">menor</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13729,7 +14022,14 @@ Felicitaciones!!!
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese su nota: 55
+<pre>Ingrese n: 6
+Ingrese numero: 10
+Ingrese numero: 4.3
+Ingrese numero: 5.3
+Ingrese numero: 6.3
+Ingrese numero: 5.1
+Ingrese numero: 1.5
+El numero menor es: 1.5
 </pre>
 </div>
 </div>
@@ -13741,85 +14041,28 @@ Felicitaciones!!!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Condicional-if-else">Condicional <code>if-else</code><a class="anchor-link" href="#Condicional-if-else">&#182;</a></h3><p>La sentencia <code>if-else</code> decide que instrucciones ejecutar, dependiendo si una condición es verdadera o falsa.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Sintaxis:</strong></p>
-<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">condicion</span><span class="p">:</span>
-    <span class="n">sentencias</span> <span class="n">cuando</span> <span class="n">la</span> <span class="n">condicion</span> <span class="n">es</span> <span class="n">verdadera</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">sentencias</span> <span class="n">cuando</span> <span class="n">la</span> <span class="n">condicion</span> <span class="n">es</span> <span class="n">falsa</span>
-</pre></div>
-<p>La <em>Indentación</em> después de la instrucción <code>else</code> indica que cosas se realizarán si <strong>no</strong> se cumple la condición.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Condicional-if-else:-Diagrama-de-flujo-explicativo">Condicional if-else: Diagrama de flujo explicativo<a class="anchor-link" href="#Condicional-if-else:-Diagrama-de-flujo-explicativo">&#182;</a></h2><center>
-<img src="http://www.cristopherarenas.cl/progra-2019/images/if-else.png" width="40%">
-</center>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ejemplos">Ejemplos<a class="anchor-link" href="#Ejemplos">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Cual es su edad? &quot;</span><span class="p">))</span>
-<span class="k">if</span> <span class="n">edad</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Usted es menor de edad&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Usted es adulto&quot;</span><span class="p">)</span>
+<p><strong>Sintaxis encontrar el mínimo:</strong></p>
+<div class="highlight"><pre><span></span><span class="n">menor</span> <span class="o">=</span> <span class="n">numero_muy_grande</span>
+<span class="n">ciclo</span><span class="p">:</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">calcular</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">menor</span><span class="p">:</span>
+        <span class="n">menor</span> <span class="o">=</span> <span class="n">n</span>
 </pre></div>
 
-    </div>
 </div>
 </div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Cual es su edad? 25
-Usted es adulto
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>¿Qué mensajes se muestran en el siguiente código si ingresamos...?</p>
-<ol>
-<li>n = 15</li>
-<li>n = 20</li>
-</ol>
+<h3 id="6.-Generar-Pares-de-cosas">6. Generar Pares de cosas<a class="anchor-link" href="#6.-Generar-Pares-de-cosas">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Escribir un programa que muestre todas las combinaciones posibles al lanzar 2 dados.</p>
 
 </div>
 </div>
@@ -13829,14 +14072,17 @@ Usted es adulto
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese un numero: &quot;</span><span class="p">))</span>
-<span class="k">if</span> <span class="n">n</span><span class="o">%</span><span class="k">2</span>==0:
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El numero es par&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La mitad del numero es&quot;</span><span class="p">,</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El numero es impar&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El sucesor del numero es&quot;</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Done&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+    <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">m</span><span class="p">:</span>
+        <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">contador</span> <span class="o">+=</span><span class="mi">1</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13853,10 +14099,42 @@ Usted es adulto
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese un numero: 30
-El numero es par
-La mitad del numero es 15.0
-Done
+<pre>1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
 </pre>
 </div>
 </div>
@@ -13868,7 +14146,18 @@ Done
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Condicional-if-elif-else">Condicional <code>if-elif-else</code><a class="anchor-link" href="#Condicional-if-elif-else">&#182;</a></h3><p>La sentencia <code>if-elif-else</code> depende de dos o más condiciones, que son evaluadas en orden. La primera que sea verdadera determina qué instrucciones son ejecutadas.</p>
+<h2 id="Conclusiones">Conclusiones<a class="anchor-link" href="#Conclusiones">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Depende. A veces hay operaciones que se deben hacer <strong>muchas veces</strong>.</li>
+<li>Un ciclo es <strong>recomendado</strong> cuando una misma operación se debe repetir, pero cambiando algo ligeramente.</li>
+<li>Los ciclos son útiles, pero peligrosos si no se tiene cuidado de la condición </li>
+</ul>
 
 </div>
 </div>
@@ -13876,55 +14165,23 @@ Done
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Sintaxis:</strong></p>
-<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">cond1</span><span class="p">:</span>
-    <span class="n">sentencias</span> <span class="n">a</span> <span class="n">ejecutar</span> <span class="n">si</span> <span class="n">cond1</span> <span class="n">es</span> <span class="n">verdadera</span>
-<span class="k">elif</span> <span class="n">cond2</span><span class="p">:</span>
-    <span class="n">sentencias</span> <span class="n">a</span> <span class="n">ejecutar</span> <span class="n">si</span> <span class="n">cond2</span> <span class="n">es</span> <span class="n">verdadera</span>
-<span class="k">elif</span> <span class="n">cond3</span><span class="p">:</span>
-    <span class="n">sentencias</span> <span class="n">a</span> <span class="n">ejecutar</span> <span class="n">si</span> <span class="n">cond3</span> <span class="n">es</span> <span class="n">verdadera</span>
-<span class="o">...</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">sentencias</span> <span class="n">cuando</span> <span class="n">ninguna</span> <span class="n">condicion</span> <span class="n">anterior</span> <span class="n">es</span> <span class="n">verdadera</span>
-</pre></div>
-<p>La <em>Indentación</em> después de cada instrucción <code>elif</code> indica que cosas se realizarán si se cumple su respectiva condición (consecuentemente, si <strong>no</strong> se cumplen las condiciones anteriores)</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Condicional-if-elif-else:-Diagrama-de-flujo-explicativo">Condicional if-elif-else: Diagrama de flujo explicativo<a class="anchor-link" href="#Condicional-if-elif-else:-Diagrama-de-flujo-explicativo">&#182;</a></h2><center>
-<img src="http://www.cristopherarenas.cl/progra-2019/images/if-elif-else.png">
-</center>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ejemplos">Ejemplos<a class="anchor-link" href="#Ejemplos">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li>Escriba un programa que califique el rendimiento del alumno en una asignatura según la nota obtenida.</li>
-</ol>
+<h2 id="Ejercicio-1">Ejercicio 1<a class="anchor-link" href="#Ejercicio-1">&#182;</a></h2><h3 id="Conjetura-de-Ulam">Conjetura de Ulam<a class="anchor-link" href="#Conjetura-de-Ulam">&#182;</a></h3><p>A partir de un número cualquiera (entrada) es posible hacer una sucesión de números que termina en 1.</p>
+<ul>
+<li>Si el número es par, se debe dividir por 2.</li>
+<li>Si el número es impar, se debe multiplicar por 3 y sumarle 1.</li>
+</ul>
+<p>Con esto se obtiene el siguiente número de la sucesión, al cual se le deben aplicar las mismas operaciones. La sucesión de números termina cuando el número obtenido por medio de las operaciones es 1.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">IFrame</span>
-<span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;https://trinket.io/embed/blocks/ad88304c71?hideGeneratedCode=true&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://trinket.io/embed/blocks/06947cd48d?hideGeneratedCode=true&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13937,7 +14194,7 @@ Done
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -13945,8 +14202,8 @@ Done
 
         <iframe
             width="100%"
-            height="600"
-            src="https://trinket.io/embed/blocks/ad88304c71?hideGeneratedCode=true"
+            height="500"
+            src="https://trinket.io/embed/blocks/06947cd48d?hideGeneratedCode=true"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -13964,301 +14221,16 @@ Done
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nota</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese su nota: &quot;</span><span class="p">))</span>
-<span class="k">if</span> <span class="n">nota</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Usted es un alumno destacado.&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">nota</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Usted ha aprobado.&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">nota</span> <span class="o">&gt;=</span> <span class="mi">55</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Usted aprobó con algunas dificultades.&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">nota</span> <span class="o">&gt;=</span> <span class="mi">45</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Con un poco mas de empeño hubiese aprobado.&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nos vemos el próximo semestre.&quot;</span><span class="p">)</span>
-</pre></div>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Inicio: &#39;</span><span class="p">))</span>
 
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese su nota: 62
-Usted aprobó con algunas dificultades.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li>Considerar la siguiente tabla que muestra la tasa de impuesto a pagar por una persona según su sueldo.</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<table style="font-size: 1em; float:center;">
-    <thead>
-        <td><b>Sueldo</b></td>
-        <td><b>Tasa de impuesto</b></td>
-    </thead>
-    <tr>
-        <td>menos de 1000</td>
-        <td>0%</td>
-    </tr>
-    <tr>
-        <td>1000 &le; sueldo &lt; 2000</td>
-        <td>5%</td>
-    </tr>
-    <tr>
-        <td>2000 &le; sueldo &lt; 4000</td>
-        <td>10%</td>
-    </tr>
-    <tr>
-        <td>4000 o más</td>
-        <td>12%</td>
-    </tr>
-</table>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Un ejemplo de como se calcula el impuesto sería el siguiente:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sueldo</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese su sueldo: &quot;</span><span class="p">))</span>
-<span class="k">if</span> <span class="n">sueldo</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;caso 1&quot;</span><span class="p">)</span>
-    <span class="n">tasa</span> <span class="o">=</span> <span class="mf">0.00</span>
-<span class="k">elif</span> <span class="n">sueldo</span> <span class="o">&lt;</span> <span class="mi">2000</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;caso 2&quot;</span><span class="p">)</span>
-    <span class="n">tasa</span> <span class="o">=</span> <span class="mf">0.05</span>
-<span class="k">elif</span> <span class="n">sueldo</span> <span class="o">&lt;</span> <span class="mi">4000</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;caso 3&quot;</span><span class="p">)</span>
-    <span class="n">tasa</span> <span class="o">=</span> <span class="mf">0.10</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;caso falso&quot;</span><span class="p">)</span>
-    <span class="n">tasa</span> <span class="o">=</span> <span class="mf">0.12</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Usted debe pagar&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">tasa</span><span class="o">*</span><span class="n">sueldo</span><span class="p">),</span> <span class="s2">&quot;de impuesto.&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese su sueldo: 1050
-caso 2
-Usted debe pagar 52 de impuesto.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Otra forma de calcular el impuesto es la siguiente:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sueldo</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese su sueldo: &quot;</span><span class="p">))</span>
-<span class="k">if</span> <span class="n">sueldo</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">:</span> <span class="c1">#1000 &gt; sueldo:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;caso 1&quot;</span><span class="p">)</span>
-    <span class="n">tasa</span> <span class="o">=</span> <span class="mf">0.00</span>
-<span class="k">if</span> <span class="n">sueldo</span> <span class="o">&gt;=</span> <span class="mi">1000</span> <span class="ow">and</span> <span class="n">sueldo</span> <span class="o">&lt;</span> <span class="mi">2000</span><span class="p">:</span> <span class="c1">#if 1000 &lt;= sueldo &lt; 2000:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;caso 2&quot;</span><span class="p">)</span>
-    <span class="n">tasa</span> <span class="o">=</span> <span class="mf">0.05</span>
-<span class="k">if</span> <span class="mi">2000</span> <span class="o">&lt;=</span> <span class="n">sueldo</span> <span class="o">&lt;</span> <span class="mi">4000</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;caso 3&quot;</span><span class="p">)</span>
-    <span class="n">tasa</span> <span class="o">=</span> <span class="mf">0.10</span>
-<span class="k">if</span> <span class="mi">4000</span> <span class="o">&lt;=</span> <span class="n">sueldo</span><span class="p">:</span> <span class="c1">#sueldo&gt;= 4000</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;caso falso&quot;</span><span class="p">)</span>
-    <span class="n">tasa</span> <span class="o">=</span> <span class="mf">0.12</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Usted debe pagar&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">tasa</span><span class="o">*</span><span class="n">sueldo</span><span class="p">),</span> <span class="s2">&quot;de impuesto.&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese su sueldo: 1050
-caso 2
-Usted debe pagar 52 de impuesto.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>¿En qué se diferencian los dos programas anteriores?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Conclusi&#243;n">Conclusi&#243;n<a class="anchor-link" href="#Conclusi&#243;n">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Las estructuras condicionales nos permiten realizar labores diferentes dependiendo si se cumple alguna condición.</li>
-<li>La tabulación/sangría indica que elementos <strong>se realizan al cumplir una condición</strong>. Este proceso se llama <strong>Indentación</strong>.</li>
-<li>Una estructura condicional tiene al <code>if</code> como <strong>instrucción obligatoria</strong>.</li>
-<li>Las instrucciones <code>elif</code> y <code>else</code> son <strong>opcionales</strong>. Si son utilizadas, <strong>siempre</strong> irán en compañía de un <code>if</code>.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ejercicio-1">Ejercicio 1<a class="anchor-link" href="#Ejercicio-1">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Desarrolle un programa que genere aleatoriamente el lanzamiento de una moneda e indique el resultado del éste.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">randint</span>
-
-<span class="n">moneda</span><span class="o">=</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="n">moneda</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El lanzamiento es CARA.&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El lanzamiento es SELLO.&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>El lanzamiento es CARA.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ejercicio-2">Ejercicio 2<a class="anchor-link" href="#Ejercicio-2">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Un año es bisiesto si es divisible por 4, excepto si es divisible por 100 y no por 400. Escriba un programa que reciba un año como entrada e indique <code>True</code> si un año es bisiesto o <code>False</code> si no lo es.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">año</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ingrese año a consultar: &#39;</span><span class="p">))</span>
-
-<span class="k">if</span> <span class="n">año</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">año</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">año</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">bisiesto</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="k">while</span> <span class="n">t</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">t</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">t</span><span class="o">/</span><span class="mi">2</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">bisiesto</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">bisiesto</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">t</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">bisiesto</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -14275,51 +14247,28 @@ Usted debe pagar 52 de impuesto.
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese año a consultar: 2019
-False
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">year</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ingrese año a consultar: &#39;</span><span class="p">))</span>
-
-<span class="k">if</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="n">bisiesto</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="k">elif</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="n">bisiesto</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="k">elif</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="n">bisiesto</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">bisiesto</span> <span class="o">=</span> <span class="kc">False</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">bisiesto</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese año a consultar: 2019
-False
+<pre>Inicio: 120
+120
+60
+30
+15
+46
+23
+70
+35
+106
+53
+160
+80
+40
+20
+10
+5
+16
+8
+4
+2
+1
 </pre>
 </div>
 </div>
@@ -14331,7 +14280,7 @@ False
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Solución reducida con salida modificada:</p>
+<h2 id="Ejercicio-2">Ejercicio 2<a class="anchor-link" href="#Ejercicio-2">&#182;</a></h2><p>Escriba un programa que determine si un número es <strong>primo</strong> o <strong>compuesto</strong>.</p>
 
 </div>
 </div>
@@ -14341,14 +14290,8 @@ False
 <div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ingrese año a consultar: &#39;</span><span class="p">))</span>
-
-<span class="n">bisiesto</span> <span class="o">=</span> <span class="p">((</span><span class="n">a</span> <span class="o">%</span><span class="k">4</span> == 0 and a %100 != 0) or a %400 == 0)
-
-<span class="k">if</span> <span class="n">bisiesto</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El año&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="s2">&quot;es bisiesto.&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El año&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="s2">&quot;no es bisiesto.&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">IFrame</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;https://trinket.io/embed/blocks/f1d62613e6?hideGeneratedCode=true&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14361,75 +14304,46 @@ False
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese año a consultar: 2019
-El año 2019 no es bisiesto.
-</pre>
-</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe
+            width="100%"
+            height="500"
+            src="https://trinket.io/embed/blocks/f1d62613e6?hideGeneratedCode=true"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ejercicio-3">Ejercicio 3<a class="anchor-link" href="#Ejercicio-3">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>El riesgo de que una persona sufra enfermedades coronarias depende de su edad y su índice de masa corporal:</p>
-<table style="font-size: 0.9em">
-    <thead>
-        <td></td>
-        <td><b>edad &lt; 45</b></td>
-        <td><b>edad &ge; 45</b></td>
-    </thead>
-    <tr>
-        <td><b>IMC &lt; 22</b></td>
-        <td>bajo</td>
-        <td>medio</td>
-    </tr>
-    <tr>
-        <td><b>IMC &ge; 22</b></td>
-        <td>medio</td>
-        <td>alto</td>
-    </tr>
-</table><p>El índice de masa corporal (IMC) es el cuociente entre el peso del individuo en kilos y el cuadrado de su altura en metros.</p>
-<p>Escriba un programa que reciba como entrada la altura, el peso y la edad de una persona, y entregue su IMC en conjunto a su condición de riesgo.</p>
 
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">edad</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese su edad [años]: &quot;</span><span class="p">))</span>
-<span class="n">peso</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese su peso [kg]: &quot;</span><span class="p">))</span>
-<span class="n">alt</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese su altura [m]: &quot;</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;n: &quot;</span><span class="p">))</span>
+<span class="n">es_primo</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mi">2</span>
 
-<span class="n">IMC</span> <span class="o">=</span> <span class="n">peso</span> <span class="o">/</span> <span class="n">alt</span><span class="o">**</span><span class="mi">2</span>
+<span class="k">while</span> <span class="n">d</span><span class="o">&lt;</span><span class="n">n</span> <span class="ow">and</span> <span class="n">es_primo</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">n</span><span class="o">%</span><span class="k">2</span> == 0:
+        <span class="n">es_primo</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">d</span><span class="o">+</span><span class="mi">1</span>
 
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Su índice de masa corporal es:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">IMC</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
-
-<span class="k">if</span> <span class="n">IMC</span><span class="o">&lt;</span><span class="mi">22</span> <span class="ow">and</span> <span class="n">edad</span><span class="o">&lt;</span><span class="mi">45</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Su nivel de riesgo es bajo.&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">IMC</span><span class="o">&lt;</span><span class="mi">22</span> <span class="ow">and</span> <span class="n">edad</span><span class="o">&gt;=</span><span class="mi">45</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Su nivel de riesgo es medio.&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">es_primo</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Es primo&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">edad</span><span class="o">&lt;</span><span class="mi">45</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Su nivel de riesgo es medio.&quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Su nivel de riesgo es alto.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Es compuesto&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14446,11 +14360,8 @@ El año 2019 no es bisiesto.
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese su edad [años]: 30
-Ingrese su peso [kg]: 70
-Ingrese su altura [m]: 1.7
-Su índice de masa corporal es: 24.22
-Su nivel de riesgo es medio.
+<pre>n: 37
+Es primo
 </pre>
 </div>
 </div>
@@ -14462,71 +14373,11 @@ Su nivel de riesgo es medio.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ejercicio-3-bis">Ejercicio 3-bis<a class="anchor-link" href="#Ejercicio-3-bis">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Realice un ruteo, utilizando la solución diseñada en el Ejercicio 3, para los siguientes valores de entrada:</p>
+<h2 id="Ejercicio-3">Ejercicio 3<a class="anchor-link" href="#Ejercicio-3">&#182;</a></h2><p>Utilizando el programa diseñado anteriormente para determinar si un número es primo o compuesto. Realice el ruteo para los siguientes valores:</p>
 <ul>
-<li>Edad 50, peso 65 y altura 1.70.</li>
-<li>Edad 19, peso 80 y altura 1.59.</li>
+<li>5</li>
+<li>9</li>
 </ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<table style="font-size: 1em; float:center;">
-    <thead>
-        <td style="border-right: 1px solid black;"><b>edad</b></td>
-        <td style="border-right: 1px solid black;"><b>peso</b></td>
-        <td style="border-right: 1px solid black;"><b>alt</b></td>
-        <td><b>IMC</b></td>
-    </thead>
-    <tr>
-        <td style="border-right: 1px solid black;">50</td>
-        <td style="border-right: 1px solid black;">&emsp;</td>
-        <td style="border-right: 1px solid black;">&emsp;</td>
-        <td>&emsp;</td>
-    </tr>
-    <tr>
-        <td style="border-right: 1px solid black;">&emsp;</td>
-        <td style="border-right: 1px solid black;">65.0</td>
-        <td style="border-right: 1px solid black;">&emsp;</td>
-        <td>&emsp;</td>
-    </tr>
-        <tr>
-        <td style="border-right: 1px solid black;">&emsp;</td>
-        <td style="border-right: 1px solid black;">&emsp;</td>
-        <td style="border-right: 1px solid black;">1.7</td>
-        <td>&emsp;</td>
-    </tr>
-    <tr>
-        <td style="border-right: 1px solid black;">&emsp;</td>
-        <td style="border-right: 1px solid black;">&emsp;</td>
-        <td style="border-right: 1px solid black;">&emsp;</td>
-        <td>22.49</td>
-    </tr>
-</table><table style="font-size: 1em; float:center;">
-    <tr>
-        <td style="text-align:left" align="left"><b>Pantalla:</b></td>
-    </tr>
-    <tr>
-        <td style="text-align:left">Su índice de masa corporal es: 22.49<br/>Su nivel de riesgo es alto.<br/>&emsp;<br/></td>
-    </tr>
-</table>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>¿Cómo se vería el ruteo con otros valores de entrada?</p>
 
 </div>
 </div>
