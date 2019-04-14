@@ -15272,24 +15272,27 @@ La palabra paralelepipedo tiene 11 letras mas que la palabra sol
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>4.</strong> Escriba la función <code>substring(s,inicio,fin)</code> que genere el substring <code>s[inicio:fin]</code> a partir de un string <code>s</code> y dos enteros <code>inicio</code> y <code>fin</code>. Si no es posible generar este substring (por los valores de <code>inicio</code> y <code>fin</code>, deberá retornar un string vacío.</p>
+<p><strong>4.</strong> Escriba la función <code>contar(letra, palabra)</code> que retorna cuántas veces aparece la letra en la palabra.</p>
+
+<pre><code>&gt;&gt;&gt; contar(‘a’, ‘abracadabra’)
+5
+&gt;&gt;&gt; contar(‘z’, ‘abracadabra’)
+0</code></pre>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">substring</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">inicio</span><span class="p">,</span> <span class="n">fin</span><span class="p">):</span>
-    <span class="n">ss</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">contar</span><span class="p">(</span><span class="n">letra</span><span class="p">,</span> <span class="n">palabra</span><span class="p">):</span>
     <span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">inicio</span> <span class="o">&lt;=</span> <span class="n">contador</span> <span class="o">&lt;</span> <span class="n">fin</span><span class="p">:</span>
-            <span class="n">ss</span> <span class="o">+=</span> <span class="n">i</span>
-        <span class="n">contador</span> <span class="o">+=</span><span class="mi">1</span>
-    <span class="k">return</span> <span class="n">ss</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">palabra</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">letra</span><span class="p">:</span>
+            <span class="n">contador</span> <span class="o">+=</span><span class="mi">1</span>
+    <span class="k">return</span> <span class="n">contador</span>
 </pre></div>
 
     </div>
@@ -15299,12 +15302,23 @@ La palabra paralelepipedo tiene 11 letras mas que la palabra sol
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;paralelepipedo&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">substring</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">contar</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="n">s</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -15321,8 +15335,38 @@ La palabra paralelepipedo tiene 11 letras mas que la palabra sol
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>ra
-ra
+<pre>2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">contar</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">,</span><span class="n">s</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3
 </pre>
 </div>
 </div>
