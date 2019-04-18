@@ -8507,15 +8507,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11289,7 +11289,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11732,7 +11732,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11859,8 +11859,8 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="images/di.png" alt="" width="200px" align="left"/>
-<img src="images/utfsm.png" alt="" width="150px" align="right"/></p>
+<p><img src="http://www.cristopherarenas.cl/progra-2019/images/di.png" alt="" width="200px" align="left"/>
+<img src="http://www.cristopherarenas.cl/progra-2019/images/utfsm.png" alt="" width="150px" align="right"/></p>
 <p><br/></p>
 <div align="center">
 <h1>IWI131 Programación</h1><br/>
@@ -12029,7 +12029,7 @@ $$<p>donde $G = 6,67428\times 10^{−11}$ [m$^3$ kg$^{−1}$ s$^{−2}$] es la c
 <span class="k">def</span> <span class="nf">cgu</span><span class="p">(</span><span class="n">masa1</span><span class="p">,</span> <span class="n">masa2</span><span class="p">,</span> <span class="n">radio</span><span class="p">):</span>
     <span class="c1"># La variable fuerza se comporta como variable local, </span>
     <span class="c1"># solo se conoce dentro de la función cgu</span>
-    <span class="n">fuerza</span> <span class="o">=</span> <span class="n">G</span> <span class="o">*</span> <span class="n">masa1</span> <span class="o">*</span> <span class="n">masa2</span> <span class="o">/</span> <span class="p">(</span><span class="n">radio</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> 
+    <span class="n">fuerza</span> <span class="o">=</span> <span class="n">G</span> <span class="o">*</span> <span class="n">masa1</span> <span class="o">*</span> <span class="n">masa2</span> <span class="o">/</span> <span class="p">(</span><span class="n">radio</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">fuerza</span>
 
 <span class="n">m1</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;m1: &#39;</span><span class="p">))</span>
@@ -12080,7 +12080,7 @@ La fuerza de atraccion es 3.3371399999999995e-09
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cgu</span><span class="p">(</span><span class="n">masa1</span><span class="p">,</span> <span class="n">masa2</span><span class="p">,</span> <span class="n">radio</span><span class="p">):</span>
     <span class="c1"># Tanto fuerza como G son variables locales que solo se conocen en cgu.</span>
     <span class="n">G</span> <span class="o">=</span> <span class="mf">6.67428e-11</span>
-    <span class="n">fuerza</span> <span class="o">=</span> <span class="n">G</span> <span class="o">*</span> <span class="n">masa1</span> <span class="o">*</span> <span class="n">masa2</span> <span class="o">/</span> <span class="p">(</span><span class="n">radio</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> 
+    <span class="n">fuerza</span> <span class="o">=</span> <span class="n">G</span> <span class="o">*</span> <span class="n">masa1</span> <span class="o">*</span> <span class="n">masa2</span> <span class="o">/</span> <span class="p">(</span><span class="n">radio</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">fuerza</span>
 
 <span class="n">m1</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;m1: &#39;</span><span class="p">))</span>
@@ -12254,11 +12254,11 @@ La fuerza de atraccion es 6.67428e-11
         <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="n">n_divisores</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="n">d</span> <span class="o">+=</span> <span class="mi">1</span>
-    
+
     <span class="c1"># Mostramos el numero si es primo</span>
     <span class="k">if</span> <span class="n">n_divisores</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-        
+
     <span class="c1"># Seguimos con el proximo numero</span>
     <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
@@ -12335,19 +12335,19 @@ Ingrese b: 10
 <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">exp</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">:</span>
-    
+
     <span class="c1"># Calculo de factorial</span>
     <span class="n">prod</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
         <span class="n">prod</span> <span class="o">*=</span> <span class="n">i</span>
         <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-        
+
     <span class="c1"># Actualizar acumulador</span>
     <span class="n">exp</span> <span class="o">=</span> <span class="n">exp</span> <span class="o">+</span> <span class="p">(</span><span class="n">x</span> <span class="o">**</span> <span class="n">n</span><span class="p">)</span> <span class="o">/</span> <span class="n">prod</span>
-    
-    <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span> 
-    
+
+    <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Valor aproximacion: &quot;</span><span class="p">,</span> <span class="n">exp</span><span class="p">)</span>
 </pre></div>
 
@@ -12484,12 +12484,12 @@ Valor aproximacion:  2.7182818284590455
 <span class="k">while</span> <span class="n">flag</span><span class="p">:</span>
     <span class="n">aprox_1</span> <span class="o">=</span> <span class="n">aproximacion</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
     <span class="n">aprox_2</span> <span class="o">=</span> <span class="n">aproximacion</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-    
+
     <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">aprox_1</span> <span class="o">-</span> <span class="n">aprox_2</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">eps</span><span class="p">:</span>
         <span class="n">flag</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
-        
+
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Aproximacion: &quot;</span><span class="p">,</span> <span class="n">aprox_2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Numero de terminos: &quot;</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
 </pre></div>
@@ -12613,14 +12613,14 @@ Numero de terminos:  32
 <span class="k">while</span> <span class="n">p1</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="ow">and</span> <span class="n">p2</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
     <span class="n">jug_1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Jugador 1: &quot;</span><span class="p">)</span>
     <span class="n">jug_2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Jugador 2: &quot;</span><span class="p">)</span>
-    
+
     <span class="k">if</span> <span class="n">jug_1</span> <span class="o">!=</span> <span class="n">jug_2</span><span class="p">:</span>
         <span class="n">res</span> <span class="o">=</span> <span class="n">cachipun</span><span class="p">(</span><span class="n">jug_1</span><span class="p">,</span> <span class="n">jug_2</span><span class="p">)</span>
         <span class="n">p1</span> <span class="o">+=</span> <span class="n">res</span>
         <span class="n">p2</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">res</span><span class="p">)</span>
-    
+
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Marcador: &quot;</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="s2">&quot; - &quot;</span><span class="p">,</span> <span class="n">p2</span><span class="p">)</span>
-        
+
 <span class="k">if</span> <span class="n">p1</span> <span class="o">&gt;</span> <span class="n">p2</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Gana jugador 1&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
