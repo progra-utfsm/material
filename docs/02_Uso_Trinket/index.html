@@ -15,7 +15,7 @@
     
     
       
-        <title>Introducción - IWI-131 Programación</title>
+        <title>Trinket - IWI-131 Programación</title>
       
     
     
@@ -49,7 +49,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#algoritmos" class="md-skip">
+        <a href="#instrucciones" class="md-skip">
           Skip to content
         </a>
       
@@ -77,7 +77,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Introducción
+              Trinket
             
           </span>
         </div>
@@ -145,6 +145,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../01_Intro_Programacion/" title="Introducción" class="md-nav__link">
+      Introducción
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -155,22 +167,10 @@
       
     
     
-    <a href="./" title="Introducción" class="md-nav__link md-nav__link--active">
-      Introducción
-    </a>
-    
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../02_Uso_Trinket/" title="Trinket" class="md-nav__link">
+    <a href="./" title="Trinket" class="md-nav__link md-nav__link--active">
       Trinket
     </a>
+    
   </li>
 
     
@@ -201,7 +201,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/dsanmartin/iwi-131/edit/master/docs/01_Intro_Programacion.ipynb" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/dsanmartin/iwi-131/edit/master/docs/02_Uso_Trinket.ipynb" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -1360,7 +1360,7 @@ h6:hover .anchor-link {
 <p><img src="https://raw.githubusercontent.com/dsanmartin/iwi-131/dev/images/di-utfsm.png" alt="DI-UTFSM" title="DI-UTFSM"></p>
 <div style="text-align: center">
     <h1>IWI-131 Programación</h1>
-    <h2>Introducción a la Programación</h2>
+    <h2>Trinket: variables, entradas, salidas y funciones</h2>
 </div>
 </div>
 </div>
@@ -1368,229 +1368,16 @@ h6:hover .anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="algoritmos">Algoritmos<a class="anchor-link" href="#Algoritmos">&#182;</a></h1>
+<h1 id="instrucciones">Instrucciones<a class="anchor-link" href="#Instrucciones">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Un algoritmo es una <strong>secuencia</strong> finita y <strong>precisa</strong> de pasos para resolver un <strong>problema</strong>.</p>
+<p><strong>Instrucciones:</strong> son las ordenes básicas que deben ser ejecutadas. Generalmente una por una. Un algortimo se compone de muchas de estas instrucciones para realizar una tarea. Por ejemplo: caminar 5 pasos hacia adelante, sumar dos números, mostrar por pantalla un resultado, etc.</p>
+<p>Veremos un primer ejemplo usando Trinket: dibujar un cuadrado</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Entonces, ¿qué es un problema?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="problemas">Problemas<a class="anchor-link" href="#Problemas">&#182;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Un problema es la necesidad de transformar un <strong>estado inicial</strong> en un <strong>estado final</strong>, respetando ciertas restricciones.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Los problemas involucran <strong>datos de entrada</strong> en el estado inical y la solución contiene <strong>datos de salida</strong> en el estado final. Además, probablemente involucre otros datos intermedios que son relevantes.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="ejemplos-de-problemas">Ejemplos de Problemas<a class="anchor-link" href="#Ejemplos-de-Problemas">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Dado un conjunto de números, determinar los números ordenados de menor a mayor.</li>
-<li>Dado un conjunto de ciudades, encontrar el camino más corto que recorre las ciudades.</li>
-<li>Dado un mensaje email, encontrar la probabilidad de que sea spam.</li>
-<li>...</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="el-problema-de-la-ambiguedad">El problema de la ambig&#252;edad<a class="anchor-link" href="#El-problema-de-la-ambig&#252;edad">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="row">
-    <div class="column">
-        <img src="https://raw.githubusercontent.com/dsanmartin/iwi-131/dev/images/leche-huevos.jpg" alt="leche-huevos" width="40%" align="left" style="margin-right:15px"/>
-    </div>
-    <div class="column">
-        Mi madre dice:<br/>
-        "Cariño, anda al súper y me traes una botella de leche, y si tienen huevos, compra seis"<br/><br/>
-        Cuando vuelvo me pregunta<br/>
-        "¿Por qué trajiste seis botellas de leche?"<br/><br/>
-        Respondo<br/>
-        "Porque había huevos"
-    </div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="comprension-del-problema">Comprensi&#243;n del Problema<a class="anchor-link" href="#Comprensi&#243;n-del-Problema">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Para poder resolver un problema se debe <strong>comprenderlo bien</strong>, y ser capaces de formalizarlo de alguna manera. De lo contrario, corremos el riesgo de terminar <strong>resolviendo el problema equivocado</strong>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="formalizacion-del-problema">Formalizaci&#243;n del Problema<a class="anchor-link" href="#Formalizaci&#243;n-del-Problema">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>En este proceso se debe <strong>definir el estado final al que se quiere llegar</strong>. Esto se logra pensando cómo se vería una solución.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>En esta etapa es importante concentrarse en el <strong>qué</strong> y no en el <strong>cómo</strong>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Volviendo a los algoritmos...</strong><br/>
-Un algoritmo es una <strong>secuencia</strong> finita y <strong>precisa</strong> de pasos para resolver un <strong>problema</strong>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Una vez especificado el problema, hay que tratar de resoverlo pero ¿de qué manera se puede expresar la secuencia de instrucciones?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Lenguaje natural</li>
-<li>Pseudocódigo</li>
-<li>Diagramas de Flujo</li>
-<li>Lenguajes de Bloques</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="problema-ejemplo">Problema Ejemplo:<a class="anchor-link" href="#Problema-Ejemplo:">&#182;</a></h2><p>Determine si un número es <strong>primo</strong> o <strong>compuesto</strong>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Definición:</strong> un número natural <code>n</code> es primo si tiene solamente como divisores a 1 y a si mismo. En caso contrario es un número compuesto.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="lenguaje-natural">Lenguaje natural<a class="anchor-link" href="#Lenguaje-natural">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Buscar algún valor <code>d</code> que esté entre <code>2</code> y <code>n-1</code> que sea divisor de <code>n</code>.</p>
-<p>Si existe por lo menos uno de estos valores, entonces <code>n</code> es compuesto; en caso contrario, es primo.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="pseudocodigo">Pseudoc&#243;digo<a class="anchor-link" href="#Pseudoc&#243;digo">&#182;</a></h3>
-<pre><code>leer n
-es_primo = verdadero
-d = 2</code></pre>
-
-<pre><code>mientras d sea menor que n:
-    si n es divisible por d:
-        es_primo = falso
-    d = d + 1</code></pre>
-
-<pre><code>si es_primo es verdadero:
-    escribir "n es primo"
-si no:
-    escribir "n es compuesto"</code></pre>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="diagrama-de-flujo">Diagrama de Flujo<a class="anchor-link" href="#Diagrama-de-Flujo">&#182;</a></h3><center>
-    <img src="https://raw.githubusercontent.com/dsanmartin/iwi-131/dev/images/diagrama_flujo.svg" width="500px;" alt="diagrama-flujo"/>
-</center>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="lenguajes-de-bloques">Lenguajes de Bloques<a class="anchor-link" href="#Lenguajes-de-Bloques">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1602,8 +1389,8 @@ si no:
         
         
         <div class="input_area">
-            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/f1d62613e6?hideGeneratedCode=true&quot; width=&quot;100%&quot; height=&quot;500&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
+            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/4b6c725cf7&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">))</span>
 </pre></div>
 
         </div>
@@ -1629,12 +1416,12 @@ si no:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[1]:</div>
+    <div class="prompt"></div>
 
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<iframe src="https://trinket.io/embed/blocks/f1d62613e6?hideGeneratedCode=true" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="output_html rendered_html output_subarea ">
+<iframe src="https://trinket.io/embed/blocks/4b6c725cf7" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 </div>
@@ -1646,68 +1433,16 @@ si no:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="estructura-de-un-algoritmo">Estructura de un algoritmo<a class="anchor-link" href="#Estructura-de-un-algoritmo">&#182;</a></h2>
+<h1 id="repeticiones">Repeticiones<a class="anchor-link" href="#Repeticiones">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Las instrucciones del algoritmo pueden expresarse:</p>
-<ul>
-<li><strong>Secuencialmente</strong></li>
-<li>Tomando <strong>decisiones</strong></li>
-<li>En <strong>repeticiones</strong> o <strong>ciclos</strong></li>
-</ul>
+<p>Muy a menudo es necesario realizar tareas especificas varias veces. Se le puede dar al computador instruccion por instruccion, pero cuando es necesario hacerlo muchas veces esto no resulta practico.
+Para resolver este problema, es posible realizar ciclos (loops, en ingles) que de manera compacta se le pide realizar al computador una misma tarea varias veces.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="usando-un-lenguaje-de-bloques">Usando un Lenguaje de Bloques<a class="anchor-link" href="#Usando-un-Lenguaje-de-Bloques">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="trinket">Trinket<a class="anchor-link" href="#Trinket">&#182;</a></h3><ul>
-<li><a href="https://trinket.io/">https://trinket.io/</a></li>
-<li>Posee un entorno de diseño de algoritmos por medio de bloques</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Dos bloques de Trinket:</strong></p>
-<ul>
-<li>move (mover)</li>
-<li>turn (girar)</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="bloque-move-mover">Bloque <code>move</code> (mover)<a class="anchor-link" href="#Bloque-move-(mover)">&#182;</a></h3><ul>
-<li>Permite mover un cursor tantas unidades como sean indicadas por un valor numérico.</li>
-<li>Puede mover hacia adelante (<code>move forward</code>) o mover hacia atrás (<code>move backward</code>).</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="move-forward-mover-hacia-adelante"><code>move forward</code> (mover hacia adelante)<a class="anchor-link" href="#move-forward-(mover-hacia-adelante)">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -1719,7 +1454,8 @@ si no:
         
         
         <div class="input_area">
-            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/b4a39cddbc?hideGeneratedCode=true&quot; width=&quot;100%&quot; height=&quot;270&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
+            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/b4bd364cac&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">))</span>
 </pre></div>
 
         </div>
@@ -1733,12 +1469,12 @@ si no:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt"></div>
 
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<iframe src="https://trinket.io/embed/blocks/b4a39cddbc?hideGeneratedCode=true" width="100%" height="270" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="output_html rendered_html output_subarea ">
+<iframe src="https://trinket.io/embed/blocks/b4bd364cac" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 </div>
@@ -1750,7 +1486,21 @@ si no:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="move-backward-mover-hacia-atras"><code>move backward</code> (mover hacia atr&#225;s)<a class="anchor-link" href="#move-backward-(mover-hacia-atr&#225;s)">&#182;</a></h4>
+<h1 id="entradas-y-salidas">Entradas y Salidas<a class="anchor-link" href="#Entradas-y-Salidas">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><em>Entradas</em> (input, en ingles) es la información que se entrega al algoritmo para que pueda realizar la tarea deseada.</p>
+</li>
+<li><p><em>Salidas</em> (output, en ingles) es la información que entrega el algortimo como resultado, parcial o final, de su ejecución.</p>
+</li>
+</ul>
+<p>En esta sesión nos enfocaremos en <strong>entradas</strong>.</p>
+
 </div>
 </div>
 </div>
@@ -1762,7 +1512,8 @@ si no:
         
         
         <div class="input_area">
-            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/279df10e32?hideGeneratedCode=true&quot; width=&quot;100%&quot; height=&quot;270&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
+            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/82c6526d93?hideGeneratedCode=true&quot; width=&quot;100%&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">))</span>
 </pre></div>
 
         </div>
@@ -1776,12 +1527,12 @@ si no:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt"></div>
 
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<iframe src="https://trinket.io/embed/blocks/279df10e32?hideGeneratedCode=true" width="100%" height="270" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="output_html rendered_html output_subarea ">
+<iframe src="https://trinket.io/embed/blocks/82c6526d93?hideGeneratedCode=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 </div>
@@ -1793,11 +1544,16 @@ si no:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="bloque-turn-girar">Bloque <code>turn</code> (girar)<a class="anchor-link" href="#Bloque-turn-(girar)">&#182;</a></h3><ul>
-<li>Permite girar un cursor en tantos grados como sean indicados por un valor numérico.</li>
-<li>Se puede girar hacia la derecha (<code>turn right by</code>) o en sentido horario. </li>
-<li>Se puede girar hacia la izquierda (<code>turn left by</code>) o en sentido anti-horario.</li>
-</ul>
+<h1 id="variables">Variables<a class="anchor-link" href="#Variables">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las variables son espacios de almacenamiento, en donde guardaremos los datos con los que trabaja el algoritmo. 
+Pueden cambiar su valor cuantas veces queramos mediante asignaciones.</p>
+<p><img src="https://raw.githubusercontent.com/dsanmartin/iwi-131/dev/images/variable.jpg" alt="variable" width="350px" align="center"/></p>
 
 </div>
 </div>
@@ -1805,7 +1561,10 @@ si no:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="turn-right-by-girar-hacia-la-derecha"><code>turn right by</code> (girar hacia la derecha)<a class="anchor-link" href="#turn-right-by-(girar-hacia-la-derecha)">&#182;</a></h4>
+<p><strong>Asignación de variables:</strong> Para cambiar el valor almacenado en una variable utilizamos una operación de asignación, denotada por un igual o por una flecha a la izquierda.</p>
+<p>Las <strong>entradas</strong> las manejaremos generalmente en <strong>variables</strong></p>
+<p><img src="https://raw.githubusercontent.com/dsanmartin/iwi-131/dev/images/asignacion_var.jpg" alt="asignacion" width="250px" align="center"/></p>
+
 </div>
 </div>
 </div>
@@ -1817,7 +1576,8 @@ si no:
         
         
         <div class="input_area">
-            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/5cf7060afb?hideGeneratedCode=true&quot; width=&quot;100%&quot; height=&quot;270&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
+            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/7ddfa415af?hideGeneratedCode=true&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">))</span>
 </pre></div>
 
         </div>
@@ -1831,12 +1591,12 @@ si no:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt"></div>
 
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<iframe src="https://trinket.io/embed/blocks/5cf7060afb?hideGeneratedCode=true" width="100%" height="270" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="output_html rendered_html output_subarea ">
+<iframe src="https://trinket.io/embed/blocks/7ddfa415af?hideGeneratedCode=true" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 </div>
@@ -1848,7 +1608,16 @@ si no:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="turn-left-by-girar-hacia-la-izquierda"><code>turn left by</code> (girar hacia la izquierda)<a class="anchor-link" href="#turn-left-by-(girar-hacia-la-izquierda)">&#182;</a></h4>
+<h1 id="funciones">Funciones<a class="anchor-link" href="#Funciones">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una función es un grupo de 1 o más instrucciones agrupadas. La función generalmente tendra datos de entrada y datos de salida.</p>
+<p>Ahora veremos un ejemplo donde se entregará el números de lados y el largo de estos,  y permitirá dibujar una figura mediante una función.</p>
+
 </div>
 </div>
 </div>
@@ -1860,7 +1629,8 @@ si no:
         
         
         <div class="input_area">
-            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/e5b38d7418?hideGeneratedCode=true&quot; width=&quot;100%&quot; height=&quot;270&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
+            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/ca4b2105d9?hideGeneratedCode=true&quot; width=&quot;100%&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">))</span>
 </pre></div>
 
         </div>
@@ -1874,12 +1644,12 @@ si no:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt"></div>
 
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<iframe src="https://trinket.io/embed/blocks/e5b38d7418?hideGeneratedCode=true" width="100%" height="270" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="output_html rendered_html output_subarea ">
+<iframe src="https://trinket.io/embed/blocks/ca4b2105d9?hideGeneratedCode=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 </div>
@@ -1887,21 +1657,6 @@ si no:
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="usando-un-lenguaje-de-bloques">Usando un Lenguaje de Bloques<a class="anchor-link" href="#Usando-un-Lenguaje-de-Bloques">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>La idea de un leguaje de bloques es poder <strong>conectar los bloques</strong> para diseñar un algoritmo que resuelva un problema. ¿Qué ocurre en el siguiente ejemplo?</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1911,7 +1666,8 @@ si no:
         
         
         <div class="input_area">
-            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/d798803a77?hideGeneratedCode=true&quot; width=&quot;100%&quot; height=&quot;270&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
+            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/7fe87ce1b6&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">))</span>
 </pre></div>
 
         </div>
@@ -1925,12 +1681,12 @@ si no:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt"></div>
 
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<iframe src="https://trinket.io/embed/blocks/d798803a77?hideGeneratedCode=true" width="100%" height="270" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="output_html rendered_html output_subarea ">
+<iframe src="https://trinket.io/embed/blocks/7fe87ce1b6" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 </div>
@@ -1942,7 +1698,7 @@ si no:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="ejercicio-1">Ejercicio 1<a class="anchor-link" href="#Ejercicio-1">&#182;</a></h2><p>Diseñar un algoritmo que dibuje un cuadrado.</p>
+<h1 id="ejercicios">Ejercicios:<a class="anchor-link" href="#Ejercicios:">&#182;</a></h1><p>1.- Dibuje una estrella de 5 puntas donde se le debe entregar al comienzo: la ubicacion inicial y el largo del trazo.</p>
 
 </div>
 </div>
@@ -1955,7 +1711,8 @@ si no:
         
         
         <div class="input_area">
-            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/9cf6545f91?hideGeneratedCode=true&quot; width=&quot;100%&quot; height=&quot;400&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
+            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/4a1fca75eb&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">))</span>
 </pre></div>
 
         </div>
@@ -1969,12 +1726,12 @@ si no:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt"></div>
 
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<iframe src="https://trinket.io/embed/blocks/9cf6545f91?hideGeneratedCode=true" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="output_html rendered_html output_subarea ">
+<iframe src="https://trinket.io/embed/blocks/4a1fca75eb" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 </div>
@@ -1986,7 +1743,7 @@ si no:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="ejercicio-2">Ejercicio 2<a class="anchor-link" href="#Ejercicio-2">&#182;</a></h2><p>Diseñar un algoritmo que dibuje otra figura geométrica distinta al cuadrado.</p>
+<p>2.- Dibuje <em>N</em> estrellas de 5 puntas ubicadas en posiciones  elegidas aleatoriamente.</p>
 
 </div>
 </div>
@@ -1999,7 +1756,8 @@ si no:
         
         
         <div class="input_area">
-            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/1a30d7cc2a?hideGeneratedCode=true&quot; width=&quot;100%&quot; height=&quot;400&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
+            <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe src=&quot;https://trinket.io/embed/blocks/1f982f9bbb&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">))</span>
 </pre></div>
 
         </div>
@@ -2013,12 +1771,12 @@ si no:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt"></div>
 
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<iframe src="https://trinket.io/embed/blocks/1a30d7cc2a?hideGeneratedCode=true" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div class="output_html rendered_html output_subarea ">
+<iframe src="https://trinket.io/embed/blocks/1f982f9bbb" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 </div>
@@ -2051,20 +1809,20 @@ si no:
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-        
-          <a href="../02_Uso_Trinket/" title="Trinket" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../01_Intro_Programacion/" title="Introducción" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
-                  Next
+                  Previous
                 </span>
-                Trinket
+                Introducción
               </div>
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
           </a>
+        
         
       </nav>
     </div>
