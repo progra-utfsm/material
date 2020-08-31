@@ -1,0 +1,12 @@
+site_name: IWI-131 Programación
+docs_dir: './notebooks'
+repo_url: https://github.com/dsanmartin/iwi-131
+theme:
+  name: material
+
+nav:
+- Introducción: 01_Intro_Programacion.ipynb
+
+plugins:
+  - mkdocs-jupyter:
+      execute: True
