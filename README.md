@@ -4,12 +4,10 @@
 Repositorio de Jupyter Notebooks con material del curso.
 
 ## Equipo
-Material base desarrollado por [Cristopher Arenas](https://github.com/cristopherarenas). Actualización de contenidos por:
+Material desarrollado por:
 
+- [Cristopher Arenas](https://github.com/cristopherarenas)
 - Sergio Campos
 - Nicolas Gálvez
 - [Daniel San Martín](https://github.com/dsanmartin)
-
-## Versión Web (en desarrollo)
-
-- [Daniel San Martín](https://github.com/dsanmartin)
+- Entre otros...
