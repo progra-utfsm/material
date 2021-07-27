@@ -14,3 +14,19 @@ Puede acceder a los ejercicios revisados en clases en este **[enlace](https://pr
 ## Contacto
 
 Si encuentra algún error, tiene una sugerencia y/o comentario por favor notificarlo a **[daniel.sanmartinr@usm.cl](mailto:daniel.sanmartinr@usm.cl)**
+
+
+## Créditos
+
+Material desarrollado por:
+
+- Cristopher Arenas
+- Sergio Campos
+- Nicolas Gálvez
+- Daniel San Martín
+
+Revisado y mejorado por:
+
+- Andrea Vásquez
+- Federico Meza
+- Ignacio Jorquera
