@@ -1,0 +1,40 @@
+site_name: IWI-131 Programación
+docs_dir: 'notebooks'
+site_dir: 'docs'
+use_directory_urls: False
+repo_url: https://github.com/progra-utfsm/material
+repo_name: progra-utfsm/material
+edit_uri: ""
+copyright: Copyright &copy; 2019 - 2022 &bullet; Progra UTFSM
+theme:
+  name: material
+  language: en
+  favicon: images/favicon.png
+  icon: 
+    logo: fontawesome/solid/laptop-code
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+nav:
+  - Inicio: index.md
+  - Introducción: 
+    - Algoritmos: 01_Intro_Programacion.ipynb
+    - Trinket: 01-a_Uso_Trinket.ipynb
+  - Python: 02_Intro_Python.ipynb
+  - Condicionales: 03_Condicionales.ipynb
+  - Ciclos: 04_Ciclos.ipynb
+  - Funciones: 05_Funciones.ipynb
+  - Strings: 06_Strings_Ciclo_For.ipynb 
+  - Listas: 07_Listas.ipynb
+  - Tuplas: 08_Tuplas.ipynb
+  - Diccionarios: 09_Diccionarios.ipynb
+  - Texto y Archivos: 10_Texto_y_Archivos.ipynb
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: False
+      ignore_h1_titles: True
+markdown_extensions:
+  - toc:
+      toc_depth: '5'
+      permalink: True
