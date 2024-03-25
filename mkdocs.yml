@@ -5,7 +5,7 @@ use_directory_urls: False
 repo_url: https://github.com/progra-utfsm/material
 repo_name: progra-utfsm/material
 edit_uri: ""
-copyright: Copyright &copy; 2019 - 2022 &bullet; Progra UTFSM
+copyright: Copyright &copy; 2019 - 2024 &bullet; Progra UTFSM
 theme:
   name: material
   language: en
