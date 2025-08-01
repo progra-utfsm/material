@@ -18,7 +18,7 @@ theme:
 nav:
   - Inicio: index.md
   - Introducción: 00_Intro_Programacion.ipynb
-  - Python: 01_Secuenciales.ipynb
+  - Secuenciales: 01_Secuenciales.ipynb
   - Condicionales: 02_Condicionales.ipynb
   - Ciclos: 03_Ciclos.ipynb
   - Funciones: 04_Funciones.ipynb
@@ -29,7 +29,7 @@ nav:
 plugins:
   - search
   - mkdocs-jupyter:
-      execute: True
+      execute: False
       ignore_h1_titles: True
 markdown_extensions:
   - toc:
