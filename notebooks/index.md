@@ -2,6 +2,7 @@
 
 # Programación UTFSM
 Material guía para las asignaturas: 
+
 * INF-129: Introducción a la Programación
 * IWI-131: Programación
 
@@ -18,6 +19,7 @@ Si encuentra algún error, tiene una sugerencia y/o comentario por favor notific
 
 ## Créditos
 Material desarrollado, revisado y mejorado por:
+
 - [Cristopher Arenas](https://github.com/cristopherarenas)
 - Sergio Campos
 - Nicolas Gálvez

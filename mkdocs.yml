@@ -1,4 +1,4 @@
-site_name: IWI-131 Programación
+site_name: Programación UTFSM
 docs_dir: 'notebooks'
 site_dir: 'docs'
 use_directory_urls: False
@@ -17,17 +17,15 @@ theme:
     - navigation.instant
 nav:
   - Inicio: index.md
-  - Introducción: 01_Intro_Programacion.ipynb
-  # - Trinket: 01-a_Uso_Trinket.ipynb
-  - Python: 02_Intro_Python.ipynb
-  - Condicionales: 03_Condicionales.ipynb
-  - Ciclos: 04_Ciclos.ipynb
-  - Funciones: 05_Funciones.ipynb
-  - Strings: 06_Strings_Ciclo_For.ipynb 
-  - Listas: 07_Listas.ipynb
-  #- Tuplas: 08_Tuplas.ipynb
-  - Diccionarios: 09_Diccionarios.ipynb
-  - Texto y Archivos: 10_Texto_y_Archivos.ipynb
+  - Introducción: 00_Intro_Programacion.ipynb
+  - Python: 01_Secuenciales.ipynb
+  - Condicionales: 02_Condicionales.ipynb
+  - Ciclos: 03_Ciclos.ipynb
+  - Funciones: 04_Funciones.ipynb
+  - Strings: 05_Strings.ipynb
+  - Listas: 06_Listas.ipynb
+  - Diccionarios: 07_Diccionarios.ipynb
+  - Texto y Archivos: 08_Texto_y_Archivos.ipynb
 plugins:
   - search
   - mkdocs-jupyter:
