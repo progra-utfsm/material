@@ -3,7 +3,7 @@ name: Deploy MkDocs to GitHub Pages
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main
 
 jobs:
   deploy:
@@ -18,7 +18,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install mkdocs mkdocs-material mkdocs-jupyter pymdown-extensions
+        run: pip install mkdocs mkdocs-material mkdocs-material-extensions mkdocs-jupyter pymdown-extensions
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
