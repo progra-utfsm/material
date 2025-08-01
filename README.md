@@ -1,16 +1,16 @@
-# IWI-131: Programación
+# Programación
 ## Universidad Técnica Federico Santa María
-
-Repositorio de Jupyter Notebooks con material del curso.
+Material guía para las asignaturas: 
+* INF-129: Introducción a la Programación
+* IWI-131: Programación
 
 ## Equipo
-Material desarrollado por:
+Material desarrollado, revisado y mejorado por:
+
 - [Cristopher Arenas](https://github.com/cristopherarenas)
 - Sergio Campos
 - Nicolas Gálvez
-- [Daniel San Martín](https://github.com/dsanmartin)
-
-Revisado y mejorado por:
-- [Andrea Vásquez](https://github.com/afvasque)
-- Federico Meza
 - [Ignacio Jorquera](https://github.com/ijorquera)
+- Federico Meza
+- [Andrea Vásquez](https://github.com/afvasque)
+- [Daniel San Martín](https://github.com/dsanmartin)
