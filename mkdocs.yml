@@ -21,8 +21,8 @@ nav:
   - Secuenciales: 01_Secuenciales.ipynb
   - Condicionales: 02_Condicionales.ipynb
   - Ciclos: 03_Ciclos.ipynb
-  - Funciones: 04_Funciones.ipynb
-  - Strings: 05_Strings.ipynb
+  - Strings: 04_Strings.ipynb
+  - Funciones: 05_Funciones.ipynb
   - Listas: 06_Listas.ipynb
   - Diccionarios: 07_Diccionarios.ipynb
   - Texto y Archivos: 08_Texto_y_Archivos.ipynb
