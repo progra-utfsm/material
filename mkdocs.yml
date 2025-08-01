@@ -29,7 +29,7 @@ nav:
 plugins:
   - search
   - mkdocs-jupyter:
-      execute: False
+      execute: True
       ignore_h1_titles: True
 markdown_extensions:
   - toc:
